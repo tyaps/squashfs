@@ -9,5 +9,5 @@ import (
 type Lzo struct{}
 
 func (l Lzo) Decompress(data []byte) ([]byte, error) {
-	return lzo.Decompress1X(bytes.NewReader(data), len(data), 0)
+	return lzo.Decompress1X(bytes.NewReader(data), len(data))
 }
